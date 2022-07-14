@@ -1,0 +1,16 @@
+{
+    "require-dev": {
+        "symfony/var-dumper": "^5.4",
+        "morrislaptop/var-dumper-with-context": "^0.3.2"
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": [
+                "beyondcode/laravel-dump-server"
+            ]
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "7.0"
+    }
+}

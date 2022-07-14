@@ -1,0 +1,12 @@
+{
+	"compile-hero" : {
+		"disable-compile-files-on-did-save-code": false,
+		"sass-output-toggle": true,
+		"scss-output-toggle": true,
+		"scss-output-directory" : "../theme/css",
+		"sass-output-directory" : "../theme/css",
+		"pug-output-toggle": false,
+		"javascript-output-toggle": false,
+		"ignore": ["*/node_modules/**/*.scss"]
+	}
+}

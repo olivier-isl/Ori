@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteRule ^css/(.+\.css)$ theme/css/$1 [L,NC]
+# RewriteRule ^/(.+\.css)$ theme/$1 [L,NC]
+RewriteRule ^js/(.+\.js)$ theme/js/$1 [L,NC]
+
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+</IfModule>

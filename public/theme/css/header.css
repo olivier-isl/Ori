@@ -1,0 +1,12 @@
+header {
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid #d1d1d1;
+}
+header nav {
+  color: black;
+}
+header nav a {
+  color: inherit;
+  text-decoration: none;
+}
